@@ -13,7 +13,55 @@
     />
   </head>
   <body>
-   
+    <div class="container">
+      <h2>Inscrivez-vous</h2>
+      <form>
+        <!-- Username -->
+        <div class="input-group">
+          <label for="user">Nom d'utilisateur</label>
+          <div class="icon-input-container">
+            <input type="text" id="user" autocomplete="off" placeholder="3 caractères minimum" maxlength="24"/>
+            <img src="ressources/check.svg" alt="icone de validation" class="icone-verif"/>
+          </div>
+          <span class="error-msg">Choisissez un peudo entre 3 et 24 caractères (-,_)</span>
+        </div>
+        <!-- Email -->
+        <div class="input-group">
+          <label for="email">Entrez votre adresse mail</label>
+          <div class="icon-input-container">
+            <input type="text" id="email" autocomplete="off" placeholder="Votre adresse mail"/>
+            <img src="ressources/check.svg" alt="icone de validation" class="icone-verif"/>
+          </div>
+          <span class="error-msg">Entrez une adresse mail valide.</span>
+        </div>
+        <!-- Password -->
+        <div class="input-group">
+          <label for="password">Entrez votre mot de passe</label>
+          <div class="icon-input-container">
+            <input type="password" id="password" autocomplete="off" placeholder="Votre mot de passe"/>
+            <img src="ressources/check.svg" alt="icone de validation" class="icone-verif"/>
+          </div>
+          <span class="pswd-info">Au moins un symbole, un chiffre et 6 caractères minimum.</span>
+          <div class="lines">
+            <div class="l1"><span>faible</span></div>
+            <div class="l2"><span>moyen</span></div>
+            <div class="l3"><span>fort</span></div>
+          </div>
+        </div>
+        <!-- Password confirmation -->
+        <div class="input-group">
+          <label for="pswd-confirmation">Confirmez le mot de passe</label>
+          <div class="icon-input-container">
+            <input type="password" id="pswd-confirmation" autocomplete="off" placeholder="Confirmez le mot de passe" maxlength="24"/>
+            <img src="ressources/check.svg" alt="icone de validation" class="icone-verif"/>
+          </div>
+          <span class="error-msg">Les mots de passe ne sont pas identiques</span>
+        </div>
+        <!-- Submit -->
+        <button type="submit" class="btn">S'inscrire</button>
+      </form>
+
+    </div>
 
     <script src="app.js"></script>
   </body>
